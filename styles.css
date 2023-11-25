@@ -1,0 +1,193 @@
+@font-face {
+    font-family: GraublauWeb;
+    src: url("../fonts/AGaramond-Regular.otf") format("opentype");
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#planetButtons {
+    display: flex;
+    position: fixed;
+    top: 10px;
+    z-index: 2;
+    text-align: center;
+    width: 100%;
+}
+
+#planetButtons>div {
+    color: white;
+    font-family: GraublauWeb;
+    cursor: pointer;
+    margin-right: 5px;
+    padding: 5px 10px;
+}
+
+#planet-info {
+    position: fixed;
+    justify-content: center;
+    z-index: 1;
+}
+
+.div-droite {
+    text-align: left;
+    font-family: GraublauWeb;
+    color: white;
+    background-color: black;
+    position: fixed;
+    vertical-align: middle;
+    top: 50%;
+    /* Ajoutez cette ligne */
+    right: 0;
+    padding: 10px;
+    /* height: 75%; */
+    border-radius: 16px;
+    width: 33.33%;
+    opacity: 0.8;
+    overflow: hidden;
+    transform: translateY(-50%);
+    /* Ajoutez cette ligne */
+}
+
+.div-droite .title {
+    text-align: center;
+    /* position: relative; */
+    font-size: 32px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.div-droite .content {
+
+    padding: 15px;
+}
+
+.div-droite span {
+    display: inline-block;
+    padding: 0;
+    /* margin: 0 -20px 0 -4px; */
+    user-select: none !important;
+    transition: 0.3s;
+}
+
+.div-droite span.space {
+    padding: 0 5px !important;
+    margin: 0 1px;
+}
+
+.div-droite span.letter:nth-child(even):hover {
+    filter: blur(1px);
+    transform: rotate(90deg);
+}
+
+.div-droite span.letter:nth-child(odd):hover {
+    filter: blur(1px);
+    transform: rotate(-90deg);
+}
+
+
+
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    z-index: 9999;
+}
+
+/* Loading Bar */
+
+/* About */
+
+#divcoreSphere .content {
+    text-align: left;
+}
+
+/* border */
+
+/* Hover Effect About */
+.div-droite::before,
+.div-droite::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 255, 255, 0.1);
+    opacity: 0.8;
+    z-index: -1;
+}
+
+.div-droite::before {
+    top: -100%;
+    left: -50%;
+    animation: move1 5s infinite linear;
+}
+
+.div-droite::after {
+    top: 100%;
+    left: 50%;
+    animation: move2 7s infinite linear;
+}
+
+@keyframes move1 {
+    0% {
+        transform: translateY(100%) rotate(45deg);
+    }
+
+    100% {
+        transform: translateY(-100%) rotate(45deg);
+    }
+}
+
+@keyframes move2 {
+    0% {
+        transform: translateY(-100%) rotate(-45deg);
+    }
+
+    100% {
+        transform: translateY(100%) rotate(-45deg);
+    }
+}
+
+#divmars .content {
+    display: flex;
+    justify-content: center;
+}
+
+#navbarnetwork {
+    position: absolute;
+    margin-top: 15px;
+    z-index: 2;
+    right: 0;
+}
+
+#divmars .content a,
+#navbarnetwork a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+}
+
+#divmars .content img,
+#navbarnetwork img {
+    width: 30px;
+    height: 30px;
+}

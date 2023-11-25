@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fares Kouki</title>
+  <link rel="icon" type="image/png" href="assets/FK.png"/>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/loadingbar.css">
+  <link rel="stylesheet" href="css/skills.css">
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+  <div id="loading-screen">
+    <canvas id="c"></canvas>
+
+    <div id="wrapper">
+      <div id="mouse"></div>
+      <div class="loader">
+      </div>
+      <div class="loading-bar">
+        <div class="progress-bar"></div>
+      </div>
+      <div class="status">
+        <div class="state"></div>
+        <div class="percentage"></div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="planetButtons">
+    <div id="btncoreSphere">About</div>
+    <div id="btnMercure">My Skills</div>
+    <div id="btnVenus">Work</div>
+    <div id="btnEarth">Contact</div>
+    <div id="btnMars">Réseaux</div>
+    <div id="btnJupiter" style="visibility: hidden;">Jupiter</div>
+    <div id="btnSaturne" style="visibility: hidden;">Saturne</div>
+    <div id="btnUranus" style="visibility: hidden;">Uranus</div>
+    <div id="btnNeptune" style="visibility: hidden;">Neptune</div>
+  </div>
+  <div id="navbarnetwork">
+    <a href="https://github.com/Faressj">
+      <img src="https://github.com/favicon.ico" alt="Logo Github">
+    </a>
+    <a href="https://www.linkedin.com/in/fares-kouki">
+      <img src="https://www.linkedin.com/favicon.ico" alt="Logo LinkedIn">
+    </a>
+  </div>
+  <div id="planet-info">
+
+    <div style="visibility: visible;" id="divcoresphere">
+      <div class="div-droite">
+        <div class="title">
+          <div>
+            <span class="letter">F</span>
+            <span class="letter">A</span>
+            <span class="letter">R</span>
+            <span class="letter">E</span>
+            <span class="letter">S</span>
+            <em>
+              <span class="letter">K</span>
+              <span class="letter">O</span>
+              <span class="letter">U</span>
+              <span class="letter">K</span>
+              <span class="letter">I</span>
+            </em>
+          </div>
+        </div>
+        <div class="content">
+          As a dedicated Front-End Developer based in the vibrant city of Lyon, France, I have an unwavering passion for
+          designing captivating user
+          interfaces, incorporating striking UI effects, animations, and crafting intuitive, dynamic user
+          experiences.<br><br>
+          I pride myself on being a well-organized, resourceful problem solver with the ability to work independently
+          and maintain
+          a keen attention to detail.<br><br>
+          When not immersed in the digital realm, I relish playing basketball, exploring outdoor adventures, indulging
+          in
+          captivating TV series, and mastering the art of chess.<br><br>
+          Driven by an insatiable thirst for knowledge, I am a perpetual student eager to learn and grow.<br><br>
+          With a strong interest in the complete spectrum of front-end and back-end development, I am excited to
+          collaborate on
+          ambitious projects with positive, like-minded individuals.<br><br>
+          Together, let's create something truly remarkable.
+        </div>
+      </div>
+    </div>
+
+    <div style="visibility: hidden;" id="divmercure">
+      <div class="div-droite">
+        <div class="title">
+          <span class="letter">M</span>
+          <span class="letter">Y</span>
+          <span class="letter"> </span>
+          <span class="letter">S</span>
+          <span class="letter">K</span>
+          <span class="letter">I</span>
+          <span class="letter">L</span>
+          <span class="letter">L</span>
+          <span class="letter">S</span>
+        </div>
+
+        <div class="content">
+          <div class="container divmercure-container">
+
+            <div class="box">
+              <div class="shadow"></div>
+              <div class="content">
+                <div class="percent" data-text="PHP" style="--num: 35">
+                  <div class="dot"></div>
+                  <svg>
+                    <circle cx="35" cy="35" r="35"></circle>
+                    <circle cx="35" cy="35" r="35"></circle>
+                  </svg>
+                </div>
+                <div class="number">
+                  <h2>70<span>%</span></h2>
+                </div>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="shadow"></div>
+              <div class="content">
+                <div class="percent" data-text="JS" style="--num: 42.5">
+                  <div class="dot"></div>
+                  <svg>
+                    <circle cx="35" cy="35" r="35"></circle>
+                    <circle cx="35" cy="35" r="35"></circle>
+                  </svg>
+                </div>
+                <div class="number">
+                  <h2>85<span>%</span></h2>
+                </div>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="shadow"></div>
+              <div class="content">
+                <div class="percent" data-text="HTML" style="--num: 47.5">
+                  <div class="dot"></div>
+                  <svg>
+                    <circle cx="35" cy="35" r="35"></circle>
+                    <circle cx="35" cy="35" r="35"></circle>
+                  </svg>
+                </div>
+                <div class="number">
+                  <h2>95<span>%</span></h2>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="shadow"></div>
+              <div class="content">
+                <div class="percent" data-text="CSS" style="--num: 47.5">
+                  <div class="dot"></div>
+                  <svg>
+                    <circle cx="35" cy="35" r="35"></circle>
+                    <circle cx="35" cy="35" r="35"></circle>
+                  </svg>
+                </div>
+                <div class="number">
+                  <h2>95<span>%</span></h2>
+                </div>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="shadow"></div>
+              <div class="content">
+                <div class="percent" data-text="PYTHON" style="--num: 15">
+                  <div class="dot"></div>
+                  <svg>
+                    <circle cx="35" cy="35" r="35"></circle>
+                    <circle cx="35" cy="35" r="35"></circle>
+                  </svg>
+                </div>
+                <div class="number">
+                  <h2>30<span>%</span></h2>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="shadow"></div>
+              <div class="content">
+                <div class="percent" data-text="WEBGL" style="--num: 25">
+                  <div class="dot"></div>
+                  <svg>
+                    <circle cx="35" cy="35" r="35"></circle>
+                    <circle cx="35" cy="35" r="35"></circle>
+                  </svg>
+                </div>
+                <div class="number">
+                  <h2>50<span>%</span></h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="visibility: hidden;" id="divvenus">
+      <div class="div-droite">
+        <div class="title">Work</div>
+        <div class="content">
+          Although I have not yet acquired any professional projects, I invite you to visit my GitHub profile to explore
+          my personal projects and gain insight into my skills and capabilities.
+        </div>
+      </div>
+    </div>
+    <div style="visibility: hidden;" id="divearth">
+      <div class="div-droite">
+        <div class="title">Contact</div>
+        <div class="content">
+          <form onsubmit="sendEmail();reset (); return false;">
+            <h3>CONTACT ME</h3>
+
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="text" id="subject" placeholder="Subject">
+            <textarea id="message" rows="4" placeholder="How can I help you?"></textarea>
+            <button type="submit">Send</button>
+            <div class="reponse"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div style="visibility: hidden;" id="divmars">
+      <div class="div-droite">
+        <div class="title">Networks</div>
+        <div class="content">
+          <a href="https://github.com/Faressj">
+            Github : 
+            <img src="https://github.com/favicon.ico" alt="Logo Github">
+          </a>
+          <a href="https://www.linkedin.com/in/fares-kouki">
+            Linkedin : 
+            <img src="https://www.linkedin.com/favicon.ico" alt="Logo LinkedIn">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div style="visibility: hidden;" id="divjupiter">
+      <div class="div-droite">
+        <div class="title">Jupiter</div>
+        <div class="content"></div>
+      </div>
+    </div>
+    <div style="visibility: hidden;" id="divsaturne">
+      <div class="div-droite">
+        <div class="title">Saturne</div>
+        <div class="content"></div>
+      </div>
+    </div>
+    <div style="visibility: hidden;" id="divuranus">
+      <div class="div-droite">
+        <div class="title">Uranus</div>
+        <div class="content"></div>
+      </div>
+    </div>
+    <div style="visibility: hidden;" id="divneptune">
+      <div class="div-droite">
+        <div class="title">Neptune</div>
+        <div class="content"></div>
+      </div>
+    </div>
+  </div>
+  <canvas id="renderCanvas"></canvas>
+  <script src="node_modules/babylonjs/babylon.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/loadingscreen.js"></script>
+  <script src="js/contact.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+</body>
+
+</html>
